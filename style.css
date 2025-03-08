@@ -1,0 +1,212 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(#111, #222);
+    height: 100vh;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 1px 1px 12px 1px black;
+    background-color: white;
+}
+.logo{
+    width: 60px;
+}
+.hamp{
+    width: 30px;
+    cursor: pointer;
+}
+.nav .links{
+    position: relative;
+}
+.nav .links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; 
+}
+.nav .links{
+    margin-bottom: 5px;
+    height: 20px;
+}
+.nav .links{
+    transition: .3s;
+}
+.nav .links ul{
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    right: 0;
+    min-width: 250px;
+    top: calc(100% + 15px);
+    display: none; 
+    z-index: 1;
+    cursor: pointer;
+}
+.nav .links ul::before{
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #333 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+.nav .links:hover ul{
+    display: block;
+}
+.nav .links ul li a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+    text-align: right;
+}
+.nav .links ul li a:hover{
+    padding-right: 25px;
+}
+.nav .links ul li:not(:last-child) a{
+    border-bottom: 1px solid #ddd;
+}
+
+/* Start Main */
+.main{
+    height: 85vh;
+    text-shadow: 1px 2px 3px #111;
+    text-align: center;
+    padding: 180px 0 90px;
+    background-image: url(img/main.jpeg);
+    background-size: cover;
+    background-position: right;
+    line-height: 1.3;
+    letter-spacing: 1.8px;
+}
+.back{
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(24, 24, 24, 0.514);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 20px 15px 25px;
+    padding: 10px 5px;
+}
+h1{
+    color: yellow;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+}
+.para-main{
+    color: #e2e2e2;
+    font-size: 22px;
+}
+/* End Main */
+
+/* Start Content */
+.content{
+    box-shadow: 3px 3px 3px 10px black inset;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px;
+    margin: 60px auto;
+    width: 90%;
+}
+
+.cont{
+    text-align: center;
+    letter-spacing: 1.6px;
+    line-height: 1.5;
+    font-size: 22px;
+}
+h2, h3{
+    border-bottom: 2px solid rgb(255, 208, 0);
+    margin-bottom: 8px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 26px;
+}
+p{
+    font-size: 20px;
+}
+#where, #how, #features{
+    background-color: #ddd;
+}
+h4{
+    font-size: 20px;
+}
+/* End content */
+
+/* Start Footer */
+.footer{
+    background-color: #ddd;
+    color: black;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.footer span{
+    font-weight: bold;
+    color: rgb(255, 208, 0);
+}
+/* End Footer */
+
+/* Social Icons */
+.social-icons {
+    box-shadow: 1px 1px 5px #ccc;
+    padding: 10px; 
+    border-radius: 10px;
+    position: fixed;
+    width: 40px;
+    height: 190px;
+    margin: 20px; 
+    margin-left: 5%;
+    background-color: #111;
+}
+.margin{
+    margin-bottom: 20px;
+    
+}
+.img{
+    cursor: pointer;
+    width: 20px;
+    height: 40px;
+}
+/* Social Icons */
+
+/* Medea Qeury */
+@media (min-width: 660px) {
+    h1{
+        font-size: 70px;
+    }
+    .para-main{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    p, .cont{
+        font-size: 26px;
+    }
+}
